@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/mainfragment3itembg"
+    android:layout_marginTop="6dp"
+    android:layout_marginBottom="6dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/selltext1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="卖："/>
+
+            <TextView
+                android:id="@+id/namemoney"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:layout_toEndOf="@+id/selltext1"
+                android:layout_toRightOf="@+id/selltext1"
+                android:textSize="12sp"
+                android:text="HRS79.96" />
+        </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/selltext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/selltextchange"
+            android:text="成交："/>
+        <TextView
+            android:id="@+id/selltextchange"
+            android:text="HRS79.96=$163.17"
+            android:layout_alignParentRight="true"
+            android:textSize="12sp"
+            android:layout_width="wrap_content"
+            android:singleLine="true"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/activity_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/selltype"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/circlered"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:text="卖"/>
+        <TextView
+            android:id="@+id/selltext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托价"
+            android:layout_toRightOf="@+id/selltype"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/entrustedprice"
+            android:layout_width="60dp"
+            android:singleLine="true"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/selltext4"
+            android:layout_toRightOf="@+id/selltype"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交价"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:id="@+id/clinchdealvalence"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="240dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transaction"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="8dp"
+            android:text=""
+            android:textSize="12sp"
+            android:layout_centerHorizontal="true"/>
+
+        <ImageView
+            android:id="@+id/deletesell"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="5dp"
+            android:src="@drawable/delete_icon"/>
+
+        <TextView
+            android:id="@+id/transactionhourse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text=""
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:id="@+id/transactionday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transactionhourse"
+            android:layout_marginTop="8dp"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:text="" />
+
+    </RelativeLayout>
+
+</LinearLayout>

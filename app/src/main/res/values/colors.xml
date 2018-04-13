@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F4053</color>
+    <color name="colorPrimaryDark">#2F4053</color>
+    <color name="colorAccent">#2F4053</color>
+    <color name="write">#ffffff</color>
+    <color name="halfgray">#666666</color>
+    <color name="white">#ffffff</color>
+    <color name="text_title">#464f61</color>
+    <color name="durationtext">#ff7d7d7d</color>
+    <color name="viewfinder_mask">#60000000</color>
+    <color name="activity_bg">#f4f4f4</color>
+    <color name="black">#000000</color>
+    <color name="black3">#333333</color>
+    <color name="gray">#bbbbbb</color>
+    <color name="user_account_title">#fbf5e4</color>
+    <color name="tb_blue">#0091ff</color>
+
+    <color name="grays">#999999</color>
+    <color name="red">#E01324</color>
+
+    <color name="greencolor">#36B58C</color>
+    <color name="blackcolor">#323232</color>
+
+    <color name="chart_red">#DF3536</color>
+    <color name="chart_green">#35DF7E</color>
+    <color name="chart_ma5">#18CCF6</color>
+    <color name="chart_ma10">#FE5EDF</color>
+    <color name="chart_ma20">#E7A520</color>
+    <color name="chart_white">#fff</color>
+
+    <color name="chart_background">#202326</color>
+    <color name="chart_grid_line">#353941</color>
+    <color name="chart_text">#B1B2B6</color>
+    <color name="chart_selector">#c830343C</color>
+    <color name="chart_tab_background">#30343C</color>
+    <color name="chart_tab_indicator">#FF6601</color>
+    <color name="tab_text_color_selector">#353941</color>
+    <color name="klinebg">#090A0B</color>
+    <color name="kViewztblack">#78797A</color>
+    <color name="cpb_red">#ffff4444</color>
+    <color name="kViewjwblack">#292929</color>
+    <color name="kViewclickblack">#BEC5DA</color>
+    <color name="kline5dayline">#dddddd</color>
+    <color name="kline10dayline">#ede32e</color>
+    <color name="kline30dayline">#f600ff</color>
+    <color name="klinered">#CD1A1E</color>
+    <color name="klinegreen">#25A749</color>
+    <color name="tabbg">#272729</color>
+    <color name="tabbgselected">#3b3b3d</color>
+    <color name="subject_select">#E70101</color>
+    <color name="subject_select2">#DE394D</color>
+    <color name="kViewblack">#181818</color>
+    <color name="seperater_color">#fefefe</color>
+
+
+    <color name="tabselect">#E70101</color>
+    <color name="tabnoselect">#797979</color>
+
+
+</resources>

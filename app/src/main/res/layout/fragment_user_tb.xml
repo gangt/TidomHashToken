@@ -1,0 +1,282 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context="com.yunqukuailian.app.fragment.MainFragemtn3TBFragment">
+
+    <include layout="@layout/header"
+        android:visibility="gone"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="可用余额"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/user_tb_textview1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="0 CNY"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+      >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="接收地址"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/user_tb_text2_listener"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="15sp"
+            android:singleLine="true"
+            android:hint="请选付币地址或扫码录入"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转账数量"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <EditText
+            android:id="@+id/user_tb_text3_listener"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="请输入付币数量"
+            android:background="@null"
+            android:textSize="15sp"
+            android:inputType="numberDecimal"
+            android:layout_marginLeft="10dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+     >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="矿工费     "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/user_tb_textview4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:hint="0CNY"
+            android:singleLine="true"
+            android:textSize="15sp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="资金密码 "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/user_tb_textview5"
+                android:background="@null"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入资金密码"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+            <TextView
+                android:id="@+id/user_tb_no_set_textview_listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="从未设置过？"
+                android:textSize="13sp"
+                android:textColor="@color/tb_blue"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+       >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="验证码      "
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/user_tb_zjm_ll"
+            android:layout_marginLeft="10dp"
+            android:background="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/user_tb_textview6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:textSize="15sp"
+                android:inputType="number"
+                android:hint="请输入验证码"
+                />
+            <TextView
+                android:id="@+id/user_tb_gyz_textview_listener"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="获取验证码"
+                android:textSize="13sp"
+                android:layout_marginRight="8dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/tb_blue"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:background="@color/activity_bg"
+        android:layout_marginTop="2dp"
+        android:layout_height="1dp"/>
+
+      <TextView
+          android:layout_marginLeft="10dp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:text="@string/string_kgf"
+          android:paddingTop="5dp"
+          android:paddingBottom="5dp"
+          android:textSize="12sp"
+          android:drawableLeft="@drawable/about_icon"
+          android:layout_gravity="center_vertical"
+          />
+
+    </LinearLayout>
+
+
+    <!--Button
+        android:id="@+id/user_tb_confirm_button_listener"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_button_selector"
+        android:text="确认付币"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />-->
+
+    <TextView
+        android:id="@+id/user_tb_confirm_button_listener"
+        android:layout_marginTop="40dp"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:background="@drawable/bg_button_selector"
+        android:text="确认付币"
+        android:textColor="@color/white"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        />
+
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:background="@color/white"
+    android:gravity="center"
+    android:paddingRight="12dp"
+    android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/mainfragmen1image"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white" />
+        <TextView
+            android:id="@+id/mainfragment1name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托价"
+            style="@style/textstylesmallgray"
+            android:layout_toRightOf="@+id/mainfragmen1image"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/mainfragment1sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$20"
+            style="@style/textstylesmallgray"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/mainfragment1name"
+            android:layout_toRightOf="@+id/mainfragmen1image"
+            android:layout_marginLeft="12dp"/>
+
+        <TextView
+            android:id="@+id/dollmoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交价"
+            style="@style/textstylemiddlered"
+            android:layout_toLeftOf="@+id/gainstext"
+            android:layout_marginRight="24dp"/>
+        <TextView
+            android:id="@+id/renmingbimoney"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/dollmoney"
+            style="@style/textstylesmallgray"
+            android:text="$20.96"
+            android:layout_toLeftOf="@+id/gainstext"
+            android:layout_marginRight="24dp"/>
+
+        <TextView
+            android:id="@+id/gainstext"
+            android:layout_width="55dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="12dp"
+            android:layout_alignParentRight="true"
+            style="@style/textstylesmallgray"
+            android:background="@drawable/redradiobg"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:text="+2.98%"/>
+
+</RelativeLayout>

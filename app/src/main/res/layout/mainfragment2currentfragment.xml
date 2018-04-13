@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/lineradbg"
+        android:divider="@drawable/baseline"
+        android:orientation="horizontal"
+        android:showDividers="middle">
+
+        <com.yunqukuailian.app.view.spinner.MaterialSpinner
+            android:id="@+id/allspinner"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:overlapAnchor="false"
+            android:padding="1dp"
+            android:spinnerMode="dropdown"
+
+            android:text="全部"
+            android:textSize="12sp" />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/baseline" />
+
+        <com.yunqukuailian.app.view.spinner.MaterialSpinner
+            android:id="@+id/pricespinner"
+            style="@style/Widget.AppCompat.Spinner.DropDown"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:overlapAnchor="false"
+            android:spinnerMode="dropdown"
+            android:text="限价委托"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <com.github.jdsjlzx.recyclerview.LRecyclerView
+        android:id="@+id/mainfragmenitem2recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp" />
+
+
+    <include
+        android:id="@+id/maincurrentfragement"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/empty_view" />
+
+
+</LinearLayout>

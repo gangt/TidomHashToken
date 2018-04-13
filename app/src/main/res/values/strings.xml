@@ -1,0 +1,148 @@
+<resources>
+    <string name="app_name">HashToken</string>
+    <string name="huoququanxian">权限获取成功</string>
+    <string name="updatetip">更新提示</string>
+    <string name="isclear">是否清除缓存</string>
+    <string name="temporarily_not_update">暂不更新</string>
+    <string name="update_now">立即更新</string>
+    <string name="personal">个人</string>
+    <string name="finance">财务</string>
+    <string name="transaction">交易</string>
+    <string name="quotation">行情</string>
+    <string name="specifications">技术指标</string>
+    <string name="close_quota">关闭指标</string>
+    <string name="open">开</string>
+    <string name="close">收</string>
+    <string name="region">幅</string>
+    <string name="vol">量</string>
+    <string name="high">高</string>
+    <string name="low">低</string>
+    <string name="one_min">1分</string>
+    <string name="three_min">3分</string>
+    <string name="five_min">5分</string>
+    <string name="fifteen_min">15分</string>
+    <string name="thirty_min">30分</string>
+    <string name="one_hour">1小时</string>
+    <string name="two_hour">2小时</string>
+    <string name="four_hour">4小时</string>
+    <string name="six_hour">6小时</string>
+    <string name="twelve_hour">12小时</string>
+    <string name="one_day">1日</string>
+    <string name="three_day">3日</string>
+    <string name="one_week">一周</string>
+    <string name="neterror">网络请求失败，请检查网络</string>
+
+    <string name="login_notcomlete">请输入正确的用户名或者密码</string>
+    <string name="error_phonenumber">手机号格式不正确</string>
+    <string name="not_equal">两次密码输入不相同</string>
+    <string name="login_regiser">登录/注册</string>
+    <string name="user_exsist">注册失败</string>
+    <string name="rmb_unit">总资产折合(CNY)</string>
+    <string name="dollar_unit">总资产折合(USDT)</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="all">全部</string>
+    <string name="pricespinners">限价委托</string>
+
+
+
+    <string name="user_cz_title">S钱包地址禁止充值除S之外的其他资产，任何非S资产充值将不可找回</string>
+    <string name="user_cz_address">我的S收款地址（点击复制）</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="toorbar_user_cz">充值</string>
+    <string name="toorbar_user_tx">提现</string>
+    <string name="string_kgf">矿工费将在可用余额中扣除，余额不足将从转账金额中扣除</string>
+    <string name="user_bt_not_set">请前往交易所网页版hht.one设置资金</string>
+    <string name="user_no_address">暂无可选地址</string>
+
+    <string name="yzm_has_sent">验证码已发送</string>
+    <string name="yzm_not_blank">动态验证码不能为空</string>
+    <string name="user_forget_passwprd">请前往交易所网页版hht.one修改密码</string>
+    <string name="user_forget_set_password">请前往交易所网页版hht.one设置密码</string>
+    <string name="user_itentify">请前往交易所网页版hht.one进行实名认证</string>
+    <string name="account_cny_cz">请前往交易所网页版hht.one进行CNY充值操作</string>
+    <string name="account_cny_tb">请前往交易所网页版hht.one进行CNY提币操作</string>
+    <string name="get_bii_faild">获取用户数据失败</string>
+    <string name="no_history_bill">没有历史账单记录</string>
+    <string name="confirm_txt">为了您的账户安全，需要完成密码验证</string>
+    <string name="user_cz_empty_address">用户充值地址为空</string>
+    <string name="copy_success">复制成功</string>
+    <string name="net_not_connected">网络未连接</string>
+
+    <string-array name="cities_data">
+        <item>中国大陆+86</item>
+        <item>香港+852</item>
+        <item>澳门+853</item>
+        <item>台湾+886</item>
+        <item>阿联酋+971</item>
+        <item>阿根廷+54</item>
+        <item>奥地利+43</item>
+        <item>澳大利亚+61</item>
+        <item>爱沙尼亚+372</item>
+        <item>埃及+20</item>
+        <item>爱尔兰+353</item>
+        <item>比利时+32</item>
+        <item>保加利亚+359</item>
+        <item>巴西+55</item>
+        <item>巴哈马+1242</item>
+        <item>白俄罗斯+375</item>
+        <item>伯利兹+501</item>
+        <item>巴拿马+507</item>
+        <item>波兰+48</item>
+        <item>德国+49</item>
+        <item>丹麦+45</item>
+        <item>俄罗斯+7</item>
+        <item>芬兰+358</item>
+        <item>法国+33</item>
+        <item>菲律宾+63</item>
+        <item>哥伦比亚+57</item>
+        <item>韩国+82</item>
+        <item>荷兰+31</item>
+        <item>加拿大+1</item>
+        <item>吉尔吉斯斯坦+996</item>
+        <item>柬埔寨+855</item>
+        <item>卡塔尔+974</item>
+        <item>立陶宛+370</item>
+        <item>卢森堡+352</item>
+        <item>罗马尼亚+40</item>
+        <item>摩洛哥+212</item>
+        <item>蒙古+976</item>
+        <item>马尔代夫+960</item>
+        <item>墨西哥+52</item>
+        <item>马来西亚+60</item>
+        <item>秘鲁+51</item>
+        <item>美国+1</item>
+        <item>尼日利亚+234</item>
+        <item>挪威+47</item>
+        <item>南非+27</item>
+        <item>葡萄牙+351</item>
+        <item>瑞士+41</item>
+        <item>日本+81</item>
+        <item>瑞典+46</item>
+        <item>斯里兰卡+94</item>
+        <item>塞尔维亚+381</item>
+        <item>沙特阿拉伯+966</item>
+        <item>塞舌尔+248</item>
+        <item>泰国+66</item>
+        <item>突尼斯+216</item>
+        <item>土耳其+90</item>
+        <item>乌克兰+380</item>
+        <item>委内瑞拉+58</item>
+        <item>西班牙+34</item>
+        <item>希腊+30</item>
+        <item>匈牙利+36</item>
+        <item>新西兰+64</item>
+        <item>新加坡+65</item>
+        <item>英国+44</item>
+        <item>印度尼西亚+62</item>
+        <item>以色列+972</item>
+        <item>印度+91</item>
+        <item>意大利+39</item>
+        <item>约旦+962</item>
+        <item>英属维尔京群岛+1284</item>
+        <item>越南+84</item>
+        <item>智利+56</item>
+    </string-array>
+</resources>

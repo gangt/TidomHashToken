@@ -1,0 +1,98 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    useLibrary 'org.apache.http.legacy'
+    defaultConfig {
+        applicationId "com.yunqukuailian.app"
+        minSdkVersion 15
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        debug {
+            //是否开启混淆
+            minifyEnabled true
+//            //是否开启资源收缩者
+            shrinkResources true
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            debuggable false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        /*maven {
+            url "http://maven.aliyun.com/nexus/content/repositories/releases"
+        }*/
+    }
+    //单元测试分离，必须加，要不然运行报错
+    testOptions {
+        unitTests.returnDefaultValues = true
+    }
+
+    aaptOptions {
+        cruncherEnabled = false
+        useNewCruncher = false
+
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+    testImplementation 'junit:junit:4.12'
+    compile 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    //RxJava
+    compile 'io.reactivex:rxjava:1.1.3'
+    //RxAndroid
+    compile 'io.reactivex:rxandroid:1.1.0'
+    //retrofit
+    compile 'com.squareup.retrofit2:retrofit:2.0.0'
+    //retrofit依赖Gson
+    compile 'com.squareup.retrofit2:converter-gson:2.0.0'
+    //OkHttp
+    compile 'com.squareup.okhttp3:okhttp:3.2.0'
+    compile 'com.squareup.okhttp3:logging-interceptor:3.4.1'
+    //retrofit依赖RxJava
+    compile 'com.squareup.retrofit2:adapter-rxjava:2.0.0'
+    //glide
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.gyf.barlibrary:barlibrary:2.3.0'
+    compile 'org.apache.httpcomponents:httpcore:4.4.4'
+    compile 'org.greenrobot:eventbus:3.1.1'
+    compile 'com.github.jdsjlzx:LRecyclerView:1.5.0'
+/*    compile 'com.aliyun.ams:alicloud-android-hotfix:3.2.1'*/
+    implementation 'com.classic.common:multiple-status-view:1.4'
+    implementation 'com.android.support:recyclerview-v7:27.0.2'
+    implementation project(':android')
+    debugCompile('com.bugtags.library:bugtags-lib:latest.integration') {
+        exclude group: 'com.android.support'
+    }
+    releaseCompile('com.bugtags.metrics:bugtags-lib:latest.integration') {
+        exclude group: 'com.android.support'
+    }
+
+    apply plugin: 'com.bugtags.library.plugin'
+//Bugtags 插件配置
+    bugtags {
+        //自动上传符号表功能配置，如果需要根据 build varint 配置，请参考帮助中心->符号表->Android 符号表->配置自动上传符号表
+        appKey " e1af8a006aa5600a31729e332d02d07c"  //这里是你的 appKey
+        appSecret "2ae7fd76ef7200766422f0e94364ce7e"    //这里是你的 appSecret，管理员在设置页可以查看
+        mappingUploadEnabled true
+
+        //网络跟踪功能配置(企业版)
+        trackingNetworkEnabled true
+    }
+}

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context="com.yunqukuailian.app.fragment.MainFragment3UserAccountFragment">
+
+    <include layout="@layout/header" android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/account_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+
+        <RelativeLayout
+            android:id="@+id/user_cz_title_ll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="3dp"
+            android:background="@color/user_account_title"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/user_account_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="30dp"
+                android:paddingBottom="3dp"
+                android:hint="@string/user_cz_title"
+                android:lineSpacingExtra="5dp"
+                android:maxLines="2"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:id="@+id/user_account_title_cancel"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_login_clean" />
+
+        </RelativeLayout>
+
+
+        <ImageView
+            android:id="@+id/user_account_pay"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/user_cz_title_ll"
+            android:layout_marginTop="60dp"
+          />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       >
+
+        <TextView
+            android:id="@+id/user_account_pay_copy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="2dp"
+            android:hint="@string/user_cz_address"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_cz_address_ll"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="30dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/user_wallet_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:paddingLeft="15dp"
+            android:paddingRight="5dp"
+            android:maxEms="20"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="地址     " />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/mine_righticon"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:paddingRight="5dp"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

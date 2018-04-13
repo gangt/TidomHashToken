@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:paddingLeft="12dp"
+    android:layout_weight="1"
+    android:paddingRight="12dp"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/gosell"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/lineradbg"
+            android:layout_marginTop="16dp"
+            android:layout_height="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/sellentrustpriceedite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="numberDecimal"
+                android:layout_toLeftOf="@+id/sellentrustpricetext"
+                style="@style/edithintstyle"
+                android:layout_centerVertical="true"
+                android:hint="委托价格:"/>
+
+            <TextView
+                android:id="@+id/sellentrustpricetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/textstylemiddleblack"
+                android:layout_centerVertical="true"
+                android:text="BTC"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/mainfragmen2lefttext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/textstylemiddleblack"
+                android:singleLine="true"
+                android:text="实际CNY"/>
+
+            <TextView
+                android:id="@+id/sellentrustpricemoney"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="@color/red"
+                android:singleLine="true"
+                android:layout_marginLeft="24dp"
+                android:layout_toRightOf="@+id/mainfragmen2lefttext"
+                android:gravity="right"
+                style="@style/textstylemiddlered"
+                android:text="￥"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/lineradbg"
+            android:layout_height="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/sellentrustnumberedite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number|numberDecimal"
+                android:layout_toLeftOf="@+id/sellentrustnumbertext"
+                style="@style/edithintstyle"
+                android:layout_centerVertical="true"
+                android:hint="委托数量:"/>
+
+            <TextView
+                android:id="@+id/sellentrustnumbertext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/textstylemiddleblack"
+                android:layout_centerVertical="true"
+                android:text="BTC"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@drawable/lineradbg"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/sellpaymoneyedit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:inputType="number"
+                style="@style/edithintstyle"
+                android:layout_toLeftOf="@+id/sellpaymoneytext"
+                android:layout_centerVertical="true"
+                android:hint="交易额:"/>
+
+            <TextView
+                android:id="@+id/sellpaymoneytext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                style="@style/textstylemiddleblack"
+                android:layout_centerVertical="true"
+                android:text="BTC"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.8"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/gosell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        style="@style/textstylemiddlegreen"
+        android:background="@drawable/lineradbggreen"
+        android:text="卖出BTC"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/gosell"
+        android:layout_marginTop="15dp">
+
+        <LinearLayout
+            android:id="@+id/nlogin"
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:divider="@drawable/baseline"
+            android:showDividers="middle"
+            android:background="@color/white"
+            android:visibility="gone"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+                <com.yunqukuailian.app.view.CircleImageView
+                    android:layout_above="@+id/mainfragment2sell_logintext"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="32dp"
+                    android:id="@+id/circleimage"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/iconfont_touxiang"
+                    />
+
+                <TextView
+                    android:id="@+id/mainfragment2sell_logintext"
+                    android:layout_width="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:text="点击登录"
+                    android:textSize="18sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="12dp"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:layout_gravity="center"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp"
+                android:text="登录后进行交易"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/islogin"
+            android:layout_width="match_parent"
+            android:showDividers="middle"
+            android:orientation="vertical"
+            android:divider="@drawable/baseline"
+            android:background="@drawable/lineradbg"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_height="0dp">
+
+                <TextView
+                    android:id="@+id/canbuy"
+                    style="@style/textstylemiddlered"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/canbuypay"
+                    android:layout_alignBottom="@+id/canbuypay"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:text="可用BTCX" />
+
+                <TextView
+                    android:id="@+id/canbuypay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/canbuy"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    style="@style/textstylemiddlered"
+                    android:singleLine="true"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/available"
+                    android:layout_width="wrap_content"
+                    android:text="可卖BTC"
+                    android:layout_centerVertical="true"
+                    style="@style/textstylemiddlered"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/availablepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_marginLeft="24dp"
+                    android:layout_toRightOf="@+id/available"
+                    android:gravity="right"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    style="@style/textstylemiddlered"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_weight="1"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/availablegray"
+                    android:layout_width="wrap_content"
+                    android:text="可用BTC"
+                    android:layout_centerVertical="true"
+                    style="@style/textstylemiddlegray"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/availablegraypay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/availablegray"
+                    android:gravity="right"
+                    android:layout_marginLeft="24dp"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    style="@style/textstylemiddlegray"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:paddingRight="8dp"
+                android:paddingLeft="8dp"
+                android:layout_height="0dp">
+                <TextView
+                    android:id="@+id/freeze"
+                    android:layout_width="wrap_content"
+                    android:text="冻结BTCX"
+                    android:layout_centerVertical="true"
+                    style="@style/textstylemiddlegray"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/freezepay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:layout_toRightOf="@+id/freeze"
+                    android:gravity="right"
+                    android:layout_marginLeft="24dp"
+                    android:layout_centerVertical="true"
+                    android:singleLine="true"
+                    style="@style/textstylemiddlegray"
+                    android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

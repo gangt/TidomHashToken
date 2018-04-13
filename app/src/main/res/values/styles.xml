@@ -1,0 +1,176 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:activityOpenEnterAnimation">@anim/anim_enter</item>
+        <item name="android:activityOpenExitAnimation">@anim/anim_exit</item>
+        <item name="android:activityCloseEnterAnimation">@anim/back_enter</item>
+        <item name="android:activityCloseExitAnimation">@anim/back_exit</item>
+    </style>
+
+
+    <style name="DialogTheme" parent="@android:style/Theme.Dialog">
+        <!-- 边框   -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0</item>
+        <!-- 全屏-->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="DialogThemeHalfAlpa" parent="@android:style/Theme.Dialog">
+        <!-- 边框   -->
+        <item name="android:windowFrame">@null</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 无标题 -->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:background">@android:color/transparent</item>
+        <!-- 背景透明 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 模糊 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 遮罩层 -->
+        <item name="android:backgroundDimAmount">0.5</item>
+        <!-- 全屏-->
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    <style name="radiobuttonstyle">
+        <item name="android:paddingRight">6dp</item>
+        <item name="android:paddingLeft">6dp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:paddingBottom">3dp</item>
+        <item name="android:textColor">@color/halfgray</item>
+    </style>
+
+    <style name="edithintstyle" parent="@style/Widget.AppCompat.EditText">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black3</item>
+        <item name="android:textColorHint">@color/gray</item>
+
+    </style>
+
+    <style name="textstylelagerblack">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black3</item>
+
+    </style>
+    <style name="textstylemiddleblack">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black3</item>
+
+    </style>
+
+    <style name="textstylesmallblack">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/black3</item>
+
+    </style>
+
+    <style name="textstylelagerwhite">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+    <style name="textstylemiddlewhite">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/write</item>
+
+    </style>
+
+    <style name="textstylesmallwhite">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/write</item>
+
+    </style>
+
+    <style name="textstylesolagerred">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+
+    <style name="textstylelagerred">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+    <style name="textstylemiddlered">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+
+    <style name="textstylesmallred">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/red</item>
+
+    </style>
+
+
+    <style name="textstylelagergray">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/grays</item>
+
+    </style>
+    <style name="textstylemiddlegray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/grays</item>
+
+    </style>
+
+    <style name="textstylesmallgray">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/grays</item>
+
+    </style>
+
+
+    <style name="textstylelagergreen">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/greencolor</item>
+
+    </style>
+    <style name="textstylemiddlegreen">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/greencolor</item>
+
+    </style>
+
+    <style name="textstylesmallgreen">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/greencolor</item>
+
+    </style>
+
+    <style name="radiobutton">
+        <item name="android:layout_marginRight">8dp</item>
+        <item name="android:layout_marginLeft">8dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="AnimBottom" parent="@android:style/Animation">
+        <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+        <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+    </style>
+
+
+</resources>

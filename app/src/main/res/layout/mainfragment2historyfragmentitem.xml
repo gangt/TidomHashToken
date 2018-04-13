@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/selltext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="卖："/>
+
+        <TextView
+            android:layout_toRightOf="@+id/selltext1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HRS79.96"/>
+
+        <TextView
+            android:id="@+id/selltextchange"
+            android:text="HRS79.96=$163.17"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/selltext2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/selltextchange"
+            android:text="成交："/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="@color/activity_bg"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:padding="12dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/selltext3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:gravity="center"
+            android:background="@drawable/circlered"
+            android:textColor="@color/white"
+            android:padding="8dp"
+            android:text="卖"/>
+        <TextView
+            android:id="@+id/selltext4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="委托价"
+            android:layout_toRightOf="@+id/selltext3"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$20"
+            android:layout_below="@+id/selltext4"
+            android:layout_toRightOf="@+id/selltext3"
+            android:layout_marginLeft="5dp"/>
+
+        <TextView
+            android:id="@+id/transaction"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="成交价"
+            android:layout_centerHorizontal="true"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/transaction"
+            android:text="$20.96"
+            android:layout_centerHorizontal="true"/>
+
+       <TextView
+           android:id="@+id/buytime"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="23:14:12"
+           android:layout_alignParentRight="true"/>
+        <TextView
+            android:id="@+id/buydata"
+            android:layout_below="@+id/buytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-12"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

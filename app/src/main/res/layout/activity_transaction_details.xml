@@ -1,0 +1,164 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#dd000000"
+    android:orientation="vertical">
+    <include layout="@layout/header"/>
+    <RelativeLayout
+        android:id="@+id/transaction_relative1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/klinebg"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:gravity="right"
+            android:text="$100"
+            android:layout_centerVertical="true"
+            style="@style/textstylemiddlered"
+            android:textColor="@color/red"/>
+
+        <ImageView
+            android:id="@+id/priceimage"
+            android:layout_width="10dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/price"
+            android:src="@drawable/ico_up2_red"/>
+
+        <TextView
+            android:id="@+id/highttext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="高"
+            android:layout_marginLeft="130dp"
+            style="@style/textstylemiddlered"
+            android:layout_toRightOf="@+id/voltext"/>
+
+        <TextView
+            android:id="@+id/hight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/highttext"
+            style="@style/textstylemiddlewhite"
+            android:layout_marginLeft="8dp"
+            android:text="0"/>
+
+
+        <TextView
+            android:id="@+id/lowtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highttext"
+            style="@style/textstylemiddlered"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/voltext"
+            android:text="低"
+            android:layout_marginLeft="130dp"/>
+
+        <TextView
+            android:id="@+id/low"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/lowtext"
+            android:layout_below="@+id/highttext"
+            style="@style/textstylemiddlewhite"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/ratetext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            style="@style/textstylemiddlered"
+            android:text="幅" />
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ratetext"
+            style="@style/textstylemiddlewhite"
+            android:layout_marginLeft="8dp"
+            android:text="0"/>
+        <TextView
+            android:id="@+id/voltext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/highttext"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="130dp"
+            style="@style/textstylemiddlered"
+            android:text="量"
+            />
+        <TextView
+            android:id="@+id/vol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/voltext"
+            android:layout_below="@+id/ratetext"
+            style="@style/textstylemiddlewhite"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="8dp"
+            android:text="0"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/transaction_relative2"
+        app:layout_constraintTop_toBottomOf="@+id/transaction_relative1"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        >
+        <com.yunqukuailian.app.view.kview.KView
+            android:id="@+id/my_charts_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/transaction_relative3">
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/klinebg"
+            android:layout_toLeftOf="@+id/spinerButton"
+            android:fadingEdge="none"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/title_lay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"></LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/spinerButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/klinebg"
+            android:drawableRight="@drawable/mainfragmentitledown"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp"
+            android:text="@string/specifications"
+            android:textColor="@color/kViewztblack" />
+    </RelativeLayout>
+</LinearLayout>

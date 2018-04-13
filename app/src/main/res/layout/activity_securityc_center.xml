@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    tools:context="com.yunqukuailian.app.activity.SecuritycCenterActivity">
+
+
+    <include
+        layout="@layout/header" />
+
+
+    <LinearLayout
+        android:id="@+id/loginpwdset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:layout_editor_absoluteX="0dp"
+        >
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/loginpwdseticon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="登录密码设置"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/moneypwdset"
+        android:layout_width="match_parent"
+        android:paddingLeft="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginpwdset"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/moneypwdset" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="资金密码设置"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/googlepwdset"
+        android:paddingLeft="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/moneypwdset"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/google_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="google认证"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/loginvalidationset"
+        android:layout_width="match_parent"
+        android:paddingLeft="12dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/googlepwdset"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/loginset" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="登录验证设置"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payforvalidationset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/loginvalidationset"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/payforseticon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="交易验证设置"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/payvalidationset"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="00dp"
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        tools:ignore="MissingConstraints"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@+id/payforvalidationset"
+        tools:layout_editor_absoluteX="0dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/payforseticon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="支付验证设置"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginpwdset"
+        android:layout_marginLeft="12dp"
+        android:background="@drawable/baseline"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/moneypwdset"
+        android:background="@drawable/baseline"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/loginvalidationset"
+        android:background="@drawable/baseline"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/payforvalidationset"
+        android:background="@drawable/baseline"/>
+
+
+
+
+</android.support.constraint.ConstraintLayout>

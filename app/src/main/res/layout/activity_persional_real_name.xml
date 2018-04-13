@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    tools:context="com.yunqukuailian.app.activity.PersionalRealNameActivity">
+
+    <include layout="@layout/header"/>
+
+    <LinearLayout
+        android:id="@+id/authenticationcountry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:layout_marginTop="10dp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            style="@style/textstylemiddleblack"
+            android:text="证件地区" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            style="@style/textstylemiddleblack"
+            android:layout_height="wrap_content"
+            android:text="中国" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:src="@drawable/mine_righticon"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/authenticationname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/authenticationcountry"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            style="@style/textstylemiddleblack"
+            android:text="证件名称" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            style="@style/textstylemiddleblack"
+            android:layout_height="wrap_content"
+            android:hint="请输入证件真实名字" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/authenticationcode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/authenticationname"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            style="@style/textstylemiddleblack"
+            android:text="证件号码" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:background="@null"
+            style="@style/textstylemiddleblack"
+            android:layout_height="wrap_content"
+            android:hint="请输入证件的号码" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/baseline"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/authenticationcountry"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/baseline"
+        android:layout_marginLeft="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/authenticationname"/>
+
+
+    <TextView
+        android:id="@+id/authenticationnext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/textstylemiddlewhite"
+        app:layout_constraintTop_toBottomOf="@id/authenticationcode"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:gravity="center"
+        android:layout_marginLeft="24dp"
+        android:layout_marginRight="24dp"
+        android:background="@drawable/lineradbgmainstyle"
+        android:text="下一步"/>
+</android.support.constraint.ConstraintLayout>

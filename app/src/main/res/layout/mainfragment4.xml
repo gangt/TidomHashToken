@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_marginTop="10dp"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/securitylinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="6dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:id="@+id/user_pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/userphoto" />
+
+
+        <TextView
+            android:id="@+id/user_phone"
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="登录/注册"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/minelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/securitylinearlayout"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/security_center_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="安全中心"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/identitylinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="12dp"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/minelinearlayout"
+        tools:layout_editor_absoluteX="92dp"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/identity_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="身份认证"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/invitationlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/identitylinearlayout"
+        tools:layout_editor_absoluteX="46dp"
+        android:visibility="gone"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/invitation_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="邀请享返佣"
+            android:textSize="16sp" />
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/customer_servicelinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/invitationlinearlayout"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="16dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/customer_service_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="客服中心"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/aboutlinearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingLeft="12dp"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp"
+        android:paddingRight="12dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/customer_servicelinearlayout"
+        tools:ignore="MissingConstraints"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="0dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/about_icon" />
+
+        <TextView
+            style="@style/textstylemiddleblack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="1"
+            android:text="安全中心"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/mine_righticon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/baseline"
+        app:layout_constraintTop_toBottomOf="@+id/customer_servicelinearlayout"
+        android:layout_marginLeft="12dp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/baseline"
+        app:layout_constraintTop_toBottomOf="@+id/identitylinearlayout"
+        android:layout_marginLeft="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/baseline"
+        app:layout_constraintTop_toBottomOf="@+id/minelinearlayout"
+        android:layout_marginLeft="12dp" />
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/mainfragment3itembg"
+    >
+
+    <LinearLayout
+        android:id="@+id/user_ll"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/user_ll1_day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11-27"
+            />
+        <TextView
+            android:id="@+id/user_ll1_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="17:29"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_vertical"
+            />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/user_ll2"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/user_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/user_bii_pic"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/money_pic"
+            android:layout_marginTop="20dp"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingTop="20dp"
+        android:id="@+id/user_ll3"
+        android:layout_toRightOf="@id/user_ll2"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/user_bill_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-19997.66"
+            android:textColor="@color/black"
+            android:textSize="19sp"
+            />
+        <TextView
+            android:id="@+id/user_bill_coinId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="USDT"
+            android:layout_toRightOf="@id/user_bill_money"
+            android:layout_marginLeft="8dp"
+            android:textSize="19sp"
+            />
+
+        <TextView
+            android:id="@+id/user_bii_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="买入HSR"
+            android:layout_below="@id/user_bill_money"
+            android:textSize="15sp"
+            android:layout_marginTop="5dp"
+            />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/user_bill_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mine_righticon"
+        android:layout_alignParentRight="true"
+        android:paddingRight="15dp"
+        android:layout_marginTop="20dp"
+        android:paddingTop="10dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/activity_bg"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/user_ll3"
+        ></View>
+
+
+</RelativeLayout>

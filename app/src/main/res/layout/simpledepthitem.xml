@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/depthitem"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/custom"
+        android:layout_width="wrap_content"
+        android:text="卖家"
+        android:lines="1"
+        style="@style/textstylesmallgreen"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/buyprice"
+        android:layout_width="match_parent"
+        style="@style/textstylesmallblack"
+
+        android:layout_toLeftOf="@+id/buynumber"
+        android:layout_marginLeft="50dp"
+        android:lines="1"
+        android:layout_marginRight="16dp"
+        android:text="2222"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/buynumber"
+        android:layout_width="wrap_content"
+        android:text="1"
+        android:lines="1"
+        style="@style/textstylesmallblack"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

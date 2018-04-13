@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    tools:context="com.yunqukuailian.app.activity.AccountManagementActivity">
+
+    <include layout="@layout/header" />
+
+    <TextView
+        android:id="@+id/accountheader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingBottom="5dp"
+        android:layout_below="@+id/toolbar"
+        android:paddingLeft="10dp"
+        android:paddingTop="5dp"
+        android:text="当前登陆账号"
+        android:textSize="14sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/accountheader"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/user_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/userphoto" />
+
+
+        <TextView
+            android:id="@+id/user_mobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_above="@+id/baselineview"
+            android:layout_toRightOf="@id/user_ic"
+            android:text="18271817111"
+            android:textColor="@color/black" />
+
+
+        <View
+            android:id="@+id/baselineview"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/gray"></View>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/baselineview"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/user_ic"
+            android:text="还未认证 " />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/unregister_butt"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="注销登陆"
+        android:textColor="@color/white" />
+
+
+</RelativeLayout>

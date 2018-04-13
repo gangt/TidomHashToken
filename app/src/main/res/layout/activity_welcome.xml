@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/wecomeimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:layout_above="@+id/welcome_icon"
+        android:src="@drawable/welcome" />
+
+    <ImageView
+        android:id="@+id/welcome_icon"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/welcome_icon"/>
+
+
+</RelativeLayout>

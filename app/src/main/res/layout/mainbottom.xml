@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RadioGroup
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/mainradiogroup"
+    android:padding="5dp"
+    android:background="@color/write"
+    android:layout_height="45dp">
+
+    <RadioButton
+        android:id="@+id/radio1"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/quotation"
+        style="@style/textstylesmallblack"
+        android:textColor="@color/tabselect"
+        android:gravity="center"
+        android:drawableTop="@drawable/main_market_select"
+        android:button="@null"/>
+    <RadioButton
+        android:id="@+id/radio2"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/transaction"
+        style="@style/textstylesmallblack"
+        android:gravity="center"
+        android:drawableTop="@drawable/main_trading"
+        android:button="@null"/>
+    <RadioButton
+        android:id="@+id/radio3"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/finance"
+        style="@style/textstylesmallblack"
+        android:gravity="center"
+        android:drawableTop="@drawable/main_financial"
+        android:button="@null"/>
+    <RadioButton
+        android:id="@+id/radio4"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:text="@string/personal"
+        android:gravity="center"
+        style="@style/textstylesmallblack"
+        android:drawableTop="@drawable/main_icon"
+        android:button="@null"/>
+
+</RadioGroup>
